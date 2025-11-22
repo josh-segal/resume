@@ -1,0 +1,281 @@
+% !TEX root = Joshua_Segal_Resume.tex
+%-------------------------
+% Resume in Latex
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\setlength{\footskip}{4.08003pt}
+
+% Adjust margins
+% \addtolength{\oddsidemargin}{-0.5in}
+% \addtolength{\evensidemargin}{-0.5in}
+% \addtolength{\textwidth}{1in}
+% \addtolength{\topmargin}{-.5in}
+% \addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge Joshua Segal} \\ \vspace{1pt}
+    {\underline{\href{mailto:segal.jo@northeastern.edu}segal.jo@northeastern.edu}} $|$ 
+    {\underline{\href{https://www.linkedin.com/in/joshua-francis-segal/}{linkedin.com/in/joshua-francis-segal}}} $|$
+    {\underline{\href{https://github.com/josh-segal}{github.com/josh-segal}}} $|$
+    {\underline{\href{https://www.joshuasegal.dev/}{joshuasegal.dev}}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Northeastern University}{Boston, MA}
+      {Bachelor of Science in Computer Science, AI concentration, Math minor}
+      {\textbf{Expected: May 2026}}
+
+      \begin{itemize}[leftmargin=0.2in, label={}]
+    \small{\item
+     \textbf{Honors}: GPA: 3.7 $|$ Dean's List (all semesters)\\
+     \textbf{Relevant Coursework}: Algorithms \& Data Structures $|$ Object Oriented Programming $|$ Machine Learning $|$ Computer Systems $|$ Database Design  $|$ Artificial Intelligence $|$ Natural Language Processing}
+ \end{itemize}
+
+  %   \resumeItemListStart
+  %   \item[] \textbf{Honors}: GPA: 3.7 $|$ Dean's List (all semesters)
+  % \item[] \textbf{Relevant Coursework}: Algorithms \& Data Structures $|$ Object Oriented Programming $|$ Artificial intelligence $|$ Machine Learning $|$ Computer Systems $|$ Database Design
+  % \resumeItemListEnd
+  
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.35in, label={}]
+    \small{\item
+     \textbf{Languages}{: Python (5yrs) $|$ TypeScript/JavaScript (4yrs) $|$ SQL (3yrs) $|$ Java (2yrs) $|$ Rust (1yrs) $|$ C (1yrs) }\\
+     \textbf{Frameworks}{: FastAPI $|$ Node.js $|$ Express $|$ React $|$ SQLAlchemy $|$ PyTorch $|$ TensorFlow}\\
+     \textbf{Technologies}{: PostgreSQL/MySQL $|$ AWS (ECS, RDS, Lambda, S3) $|$ Docker $|$ Terraform $|$ CI/CD $|$ Git}}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+      {Co-Founder \& CTO}{\textbf{Dec. 2024 - Present}}
+      {HouseFly - AI tools for the Real Estate Industry}{Boston, MA}
+      \resumeItemListStart
+      \resumeItem{Launched 2 AI products, generating \$10,000+ revenue from 5 real estate clients and securing \$3,000 in funding}
+      \resumeItem{Built property intelligence platform with AI agents that perform contextualized property and market analysis, eliminating weeks of manual research across 180,000+ Boston properties aggregated from 4 sources}
+      \resumeItem{Built multi-agent AI system automating real estate lead qualification and reducing time to respond from 2 hours to 4 seconds through multi-step conversations using Python and LLMs, processing 1000+ messages/month}
+      
+      % \resumeItem{Identified customer needs through 40+ interviews, rapidly prototyping 6 end-to-end product concepts that generated \$6,000+ revenue across 3 MVPs}
+      % \resumeItem{Created AI agent orchestration system using Python and LLMs to automate real estate lead qualification, processing 250+ lead messages/week, generating \$1000 revenue from 2 customers}
+      % \resumeItem{Developed large-scale property data pipeline using TypeScript and Playwright to scrape and process 100,000+ parcels from government databases for investment opportunities, generating \$1,500 revenue from 3 customers}
+      % \resumeItem{Won \$3,000 from Northeastern's Venture Accelerator after building a roommate matching app that got 300+ users and 120+ matches in 2 months, generating \$3,600 revenue from sending groups to local real estate agents}
+        
+      \resumeItemListEnd
+
+  \resumeSubheading
+      {Software Engineer}{\textbf{July 2025 - Present}}
+      {NExT Consulting}{Boston, MA}
+      \resumeItemListStart
+      \resumeItem{Led team of 6 engineers building production warehouse management system for hardtech manufacturer using Python/React, eliminating 50 hours/week manual tracking, improving accuracy from 50\% to 95\% for 10k+ items}
+      \resumeItem{Designed PostgreSQL schema with temporal row versioning and genealogy tracking for complete traceability across 100k+ rows, and optimizing queries to achieve 2x system performance improvement}
+      \resumeItem{Architected and deployed AWS infrastructure (ECS, RDS, S3) using Terraform with CI/CD pipeline, supporting 250+ users across 2+ warehouse locations with 99.9\% uptime}
+      % \resumeItem{Building production warehouse management system using Python and React, replacing manual tracking in industrial manufacturing warehouse and improving inventory accuracy to 95\% across 10,000+ items}
+      % \resumeItem{Led team of 6 engineers in 20+ client conversations to define and prioritize requirements}
+      % \resumeItem{Architected cloud infrastructure using AWS and Terraform with CI/CD, supporting 250+ concurrent users}
+      % \resumeItem{Built PostgreSQL database on AWS RDS, implementing 100\% traceability and row versioning on 100k+ records}
+        
+      \resumeItemListEnd
+
+      % \resumeSubheading
+      % {Co-Founder}{\textbf{Jan. 2025 - May 2025}}
+      % {HouseFly}{Boston, MA}
+      % \resumeItemListStart
+      %   \resumeItem{Built a React Native app using TypeScript, Node.js, PostgreSQL, AWS S3, to match roommates; Matched 120+ people across 300+ users, made \$3600+ from sending roommate groups to local brokers}
+      %   \resumeItem{Won 2nd place (\$2,500) and Social Media Award (\$500) out of 20 teams at Husky Startup Challenge by developing and pitching a peer-to-peer apartment rental marketplace}
+      % \resumeItemListEnd
+
+    \resumeSubheading
+      {Machine Learning Engineer}{\textbf{July 2024 - Dec. 2024}}
+      {Harvard Research Lab}{Boston, MA}
+      \resumeItemListStart
+        \resumeItem{Built neuron segmentation desktop app reducing analysis time from 20 min to 0.5s/image for 6 neuroscientists across 5000+ images, enabling researchers to label data, fine-tune YOLOv8 models, and run inference }
+        \resumeItem{Developed custom UNet denoising model (11M parameters) for preprocessing using PyTorch and integrated multi-annotator agreement weighting into YOLOv8 training, improving segmentation precision from 61\% to 93\%}
+        % \resumeItem{Built ML-based neuron segmentation desktop app using Python and TensorFlow to replace manual cell counting, reducing data analysis time from 20 minutes to 0.5 seconds for 6 PhD neuroscientists across 5000+ images}
+        % \resumeItem{Architected ML training infrastructure using Python and TensorFlow, automating model training, augmentation, versioning, comparison, drift detection, accelerating research process and improving model precision by 32\%}
+        % \resumeItem{Created data processing pipeline using Python, reducing manual data processing from 10 hours to 1 hour/week}
+        % \resumeItem{Developed neural net architecture for neuroscience research using Python, PyTorch, improved average precision by 32$\%$ from YOLOv8 model with custom loss function and augmented input feature space weight map}
+        % \resumeItem{Automated data labeling pipeline with Python, Transformers API, 100$\%$ recall, 96$\%$ precision across 500+ images}
+        % \resumeItem{Created evaluation metrics and hooks for 3 open-source models using Python, PyTorch, TensorBoard}
+      \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Machine Learning Engineer Intern}{\textbf{July 2024 - Sept. 2024}}
+    %   {Harvard Research Lab}{Boston, MA}
+    %   \resumeItemListStart
+    %     \resumeItem{Developed neural net architecture for neuroscience research using Python, PyTorch, improved average precision by 32$\%$ from YOLOv8 model with custom loss function and augmented input feature space weight map}
+    %     \resumeItem{Automated data labeling pipeline with Python, Transformers API, 100$\%$ recall, 96$\%$ precision across 500+ images}
+    %     \resumeItem{Created evaluation metrics and hooks for 3 open-source models using Python, PyTorch, TensorBoard}
+    %   \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+
+  \resumeSubHeadingListStart
+%      \resumeProjectHeading
+%           {\textbf{\textbf{Mentorship Matching App}} $|$ \emph{Team Project} $|$ \emph{120+ Users}}{}
+%           \resumeItemListStart
+%           \resumeItem{
+% Built full-stack mentorship matching platform using \textbf{Python/Django} backend, \textbf{React} frontend, \textbf{PostgreSQL} database, and \textbf{AWS} deployment, accomplishing \textbf{90$\%$} operational cost reduction across \textbf{120+} University Staff}
+%         \resumeItem{Architected and deployed \textbf{AWS} infrastructure using \textbf{CDK}, \textbf{ECS Fargate}, \textbf{ECR}, and \textbf{Docker} with \textbf{CI/CD} via \textbf{GitHub Actions}, managing \textbf{PostgreSQL} hosting and \textbf{CloudWatch} monitoring for production environment}
+%         \resumeItem{Implemented optimistic UI updates with \textbf{React Query}, reducing perceived latency from \textbf{2 seconds to instant}}
+%           \resumeItemListEnd
+  
+  \resumeProjectHeading
+          {\textbf{\textbf{SMS Assistant for Restaurant}} $|$ \emph{Enterprise Client} $|$ \emph{Agentic AI Project} $|$ {\underline{\href{https://github.com/MiloMargolis/text-me-assistant}{GitHub}}}}{}
+          \resumeItemListStart
+          \resumeItem{Built production RAG SMS agent to respond to employee texts, automating 75\% of responses for 50+ staff}
+          \resumeItem{Implemented self-learning system using Twilio webhooks and Node.js to capture manager corrections and continuously expand Supabase knowledge base, improving answer coverage from 55\% to 75\% in one week}
+          \resumeItem{Deployed serverless architecture on AWS Lambda, reducing costs by 90\% while handling 40+ queries/day}
+          \resumeItemListEnd
+
+    \resumeProjectHeading
+          {\textbf{\textbf{Calendar Automation System}} $|$ \emph{AI Project} $|$ {\underline{\href{https://github.com/josh-segal/assistant}{GitHub}}}}
+          {}
+          \resumeItemListStart
+            \resumeItem{Developed calendar automation system using LLMs and Notion API, saving 5+ hours/week of planning}
+            \resumeItem{Fine-tuned distilBERT classification model for calendar event types, reducing event misclassifications by 80\% across 200+ events, using LLMs to generate 10,000+ labeled training examples to overcome data scarcity}
+          \resumeItemListEnd
+
+    \resumeProjectHeading
+          {\textbf{\textbf{Medical Claims Engine}} $|$ {\underline{\href{https://github.com/josh-segal/healthtech-sim}{GitHub}}}}
+          {}
+          \resumeItemListStart
+            \resumeItem{Built parallel claims processing engine using Rust, achieving 100\% reliability across 5,000+ claims/second}
+            \resumeItem{Implemented real-time claims aging report with automated bucketing and statistical analysis}
+          \resumeItemListEnd
+          
+      % \resumeProjectHeading
+      %     {\textbf{\textbf{Roommate Matching App}} $|$ \emph{300+ Users $|$ \$3600+ Revenue $|$ {\underline{\href{https://www.houseflyai.com/}{Website}}}}}{}
+      %     \resumeItemListStart
+      %       \resumeItem{Built a \textbf{React Native} app to match roommates using \textbf{TypeScript}, \textbf{Node.js}, \textbf{PostgreSQL}, \textbf{AWS S3}; Matched \textbf{120+ people} across \textbf{300+ users}, made \textbf{\$3600+} from sending roommate groups to local brokers}
+      %   \resumeItem{Won 2nd place (\textbf{\$2,500}) and Social Media Award (\textbf{\$500}) out of 20 teams at Husky Startup Challenge by developing and pitching a peer-to-peer apartment rental marketplace based on app users' interview pain points}
+      %     \resumeItemListEnd
+          
+      % \resumeProjectHeading
+      %     {\textbf{\textbf{Stock-Legislation Predictor}} $|$ \emph{Team Project $|$ {\underline{\href{https://github.com/josh-segal/political-profit-bros/tree/main}{Github}}} $|$ {\underline{\href{https://josh-segal.github.io/CS4973-BLOGS/team_posts/}{Blog}}}}}
+      %     {}
+      %     \resumeItemListStart
+      %       \resumeItem{Built \textbf{Streamlit} web-app using \textbf{Python}, \textbf{MySQL}, \textbf{Docker}, and integrated ML models for users to track and predict correlation between \textbf{300,000+} stock data points and the progress of \textbf{1,000+} pieces of legislation}
+      %       \resumeItem{Designed \textbf{20} RESTful API routes and interfaced containerized ML models for stock price and volume predictions}
+      %     \resumeItemListEnd
+
+          
+      % \resumeProjectHeading
+      %     {\textbf{\textbf{NLP Similarity Framework}} $|$ \emph{AI Research (30 hours) $|$ {\underline{\href{https://github.com/josh-segal/NLP-Text-Entailment-Presentation-Similarity-Evaluation}{Github}}} $|$ {\underline{\href{https://docs.google.com/document/d/1OfGY4GHFgta75f1Y15qswR-TceMsYTiG29EC4w4jIV4/edit?usp=sharing}{Report}}}}}
+      %     {\textbf{March 2024 - May 2024}}
+      %     \resumeItemListStart
+      %       \resumeItem{Developed a framework for evaluating research presentation-paper similarity, achieved 76$\%$ recall on human labels}
+      %       \resumeItem{Designed and implemented LSTM RNN, distilBERT, Logistic Regression NLP models for text entailment, achieved 62$\%$ validation accuracy across 570k samples, employed Bayesian Optimization for hyperparameter tuning}
+      %     \resumeItemListEnd
+      
+      
+      % \resumeProjectHeading
+      %     {\textbf{\textbf{Trip Optimization and Ranking}} $|$ \emph{Published Web-App $|$ {\underline{\href{https://github.com/josh-segal/Local-Tourist}{Github}}} $|$ {\underline{\href{https://tourist-412606.uk.r.appspot.com}{Website}}}}}
+      %     {}
+      %     \resumeItemListStart
+      %       \resumeItem{Built a \textbf{Flask} web-app using \textbf{Python}, \textbf{Google Cloud}, \textbf{Firestore}, to enhance trip planning and navigation}
+      %       \resumeItem{Developed \textbf{3} core features (attraction trip planning and ranking, user auth) across \textbf{18} RESTful API routes}
+      %       \resumeItem{Integrated real-time navigation using \textbf{Google Maps API }library for accurate and optimal trip route ordering}
+      %     \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%
+
+
+%-------------------------------------------
+\end{document}
