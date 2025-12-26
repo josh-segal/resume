@@ -114,7 +114,7 @@
       \begin{itemize}[leftmargin=0.2in, label={}]
     \small{\item
      \textbf{Honors}: GPA: 3.7 $|$ Dean's List (all semesters)\\
-     \textbf{Relevant Coursework}: Algorithms $|$ Object Oriented Programming $|$ Artificial Intelligence $|$ Machine Learning $|$ Natural Language Processing $|$ Neural Networks $|$ Computer Systems $|$ Database Design $|$ Software Engineering}
+     \textbf{Relevant Coursework}: Artificial Intelligence $|$ Machine Learning $|$ Natural Language Processing $|$ Neural Networks Matrix Methods in ML $|$ Calculus I, II, III $|$ Linear Algebra $|$ Probability \& Statistics $|$ Discrete Mathematics Software Engineering Algorithms \& Data Structures $|$ Object Oriented Programming $|$ Computer Systems $|$ Database Design}
  \end{itemize}
 
   %   \resumeItemListStart
@@ -131,7 +131,7 @@
     \small{\item
      \textbf{Languages}{: Python $|$ TypeScript/JavaScript $|$ Rust $|$ C $|$ Java $|$ SQL }\\
      \textbf{Frameworks}{: FastAPI $|$ Flask $|$ Django $|$ React $|$ Node.js $|$ Express.js $|$ Tokio $|$ SQLAlchemy $|$ Prisma}\\
-     \textbf{ML/AI}{: PyTorch $|$ TensorFlow $|$ LLMs $|$ RAG $|$ Computer Vision}\\
+     \textbf{ML/AI}{: PyTorch $|$ TensorFlow $|$ LLMs $|$ RAG $|$ Computer Vision $|$ Fine-Tuning}\\
      \textbf{Tools}{: AWS (ECS, RDS, Lambda, S3) $|$ PostgreSQL $|$ Supabase $|$ Docker $|$ Terraform $|$ Git}}
  \end{itemize}
 
@@ -143,13 +143,14 @@
       {Co-Founder \& CTO}{\textbf{April 2025 - Present}}
       {ZoneIQ - AI-Native Real Estate Brokerage}{Boston, MA}
       \resumeItemListStart
-      \resumeItem{Generated {\textbf{\$10k+}} revenue across {\textbf{5}} brokerage firms and secured {\textbf{\$3k}} seed funding for AI property analysis
-}
+      \resumeItem{Generated {\textbf{\$10k+}} revenue across {\textbf{5}} brokerage firms and secured {\textbf{\$3k}} seed funding for AI property analysis}
       % \resumeItem{Launched 2 AI products, generating \$10,000+ revenue from 5 real estate clients and securing \$3,000 in funding}
       % \resumeItem{Eliminated 1k+ hrs/mo in property research via intelligent AI agents analyzing 180k+ properties}
       \resumeItem{Built proptech platform eliminating {\textbf{1k+}} hrs/mo manual research via {\textbf{web scrapers}} analyzing {\textbf{180k+}} properties}
+      \resumeItem{Deployed {\textbf{research agent}} searching {\textbf{9k+}} filings to identify comparable deals with \textbf{GPT-4o} and \textbf{Playwright}}
       % \resumeItem{Built property intelligence platform with AI agents that perform contextualized property and market analysis, eliminating weeks of manual research across 180,000+ Boston properties aggregated from 4 sources}
       \resumeItem{Developed {\textbf{multi-agent AI}} lead qualification system reducing time to respond from {\textbf{2 hours to 4 seconds}} through multi-step conversations using {\textbf{Python}} and {\textbf{LLMs}}, processing {\textbf{1k+}} messages/month}
+      \resumeItem{Implemented custom agent router handling \textbf{5+} agents with \textbf{99\%} routing accuracy using dynamic prompt injection}
       
       % \resumeItem{Identified customer needs through 40+ interviews, rapidly prototyping 6 end-to-end product concepts that generated \$6,000+ revenue across 3 MVPs}
       % \resumeItem{Created AI agent orchestration system using Python and LLMs to automate real estate lead qualification, processing 250+ lead messages/week, generating \$1000 revenue from 2 customers}
@@ -162,9 +163,9 @@
       {Tech Lead, Software Engineer}{\textbf{July 2025 - Dec. 2025}}
       {NExT Consulting}{Boston, MA}
       \resumeItemListStart
-      \resumeItem{Led team of 6 engineers building production warehouse management system for hardtech manufacturer using {\textbf{Python/React}}, eliminating {\textbf{20}} hrs/wk manual tracking, improving accuracy from {\textbf{50\%}} to {\textbf{95\%}} for {\textbf{10k+}} items}
-      \resumeItem{Designed {\textbf{PostgreSQL}} schema with temporal row versioning and genealogy tracking for complete traceability across {\textbf{100k+ rows}}, and optimizing queries to achieve {\textbf{2x}} faster performance}
-      \resumeItem{Architected and deployed {\textbf{AWS infrastructure (ECS, RDS, S3)}} using {\textbf{Terraform}} with {\textbf{CI/CD}} pipeline, supporting {\textbf{250+}} users}
+      \resumeItem{Led team of 6 engineers building production warehouse management system for hardtech manufacturer using {\textbf{Python/React}}, eliminating {\textbf{20 hrs/wk}} manual tracking, improving accuracy from {\textbf{50\%}} to {\textbf{95\%}} for {\textbf{10k+}} items}
+      \resumeItem{Designed {\textbf{PostgreSQL}} schema with {\textbf{100k+ rows}}, \textbf{50+} tables, \textbf{250+} fields, implemented alembic database migrations across dev/staging/prod, optimized data access patterns, achieving {\textbf{2x}} reduced network transfer volume}
+      \resumeItem{Architected and deployed containerized {\textbf{AWS infrastructure (ECS, RDS, S3)}} using {\textbf{Docker}} and {\textbf{Terraform}} IaC with {\textbf{CI/CD}} pipeline (test, lint, build, deploy), supporting {\textbf{250+}} concurrent users}
       % \resumeItem{Building production warehouse management system using Python and React, replacing manual tracking in industrial manufacturing warehouse and improving inventory accuracy to 95\% across 10,000+ items}
       % \resumeItem{Led team of 6 engineers in 20+ client conversations to define and prioritize requirements}
       % \resumeItem{Architected cloud infrastructure using AWS and Terraform with CI/CD, supporting 250+ concurrent users}
@@ -184,8 +185,11 @@
       {Machine Learning Engineer}{\textbf{July 2024 - Dec. 2024}}
       {Harvard Research Lab}{Boston, MA}
       \resumeItemListStart
-        \resumeItem{Built {\textbf{Python}} neuron segmentation desktop app reducing analysis time from {\textbf{20 min to 0.5s}}/image across {\textbf{5000+}} images, enabling {\textbf{6+}} researchers to label data, fine-tune {\textbf{CNN}} models, and run inference locally}
-        \resumeItem{Increased segmentation precision from {\textbf{61\% to 93\%}} via architecting custom 11M parameter {\textbf{UNet}} denoising model and multi-annotator agreement weighting in {\textbf{YOLOv8}} training}
+      \resumeItem{Built end-to-end {\textbf{ML infrastructure}} training {\textbf{U-Net}} from scratch and fine-tuning {\textbf{CNNs}} locally, reduced analysis time from {\textbf{20 min to 0.5s}}/image; developed automated data pipeline handling preprocessing for \textbf{5000}+ images}
+        \resumeItem{Designed local database schema managing model versioning, experiment tracking, and artifact storage for \textbf{100+} training runs with full reproducibility, enabled \textbf{6+} researchers to iterate on models locally}
+        \resumeItem{Increased segmentation precision from {\textbf{61\% to 93\%}} by implementing multi-user labeling using STAPLE algorithm}
+        % \resumeItem{Built {\textbf{Python}} neuron segmentation desktop app reducing analysis time from {\textbf{20 min to 0.5s}}/image across {\textbf{5000+}} images, enabling {\textbf{6+}} researchers to label data, fine-tune {\textbf{CNN}} models, and run inference locally}
+        % \resumeItem{Increased segmentation precision from {\textbf{61\% to 93\%}} via architecting custom 11M parameter {\textbf{UNet}} denoising model and multi-annotator agreement weighting in {\textbf{YOLOv8}} training}
         % \resumeItem{Built ML-based neuron segmentation desktop app using Python and TensorFlow to replace manual cell counting, reducing data analysis time from 20 minutes to 0.5 seconds for 6 PhD neuroscientists across 5000+ images}
         % \resumeItem{Architected ML training infrastructure using Python and TensorFlow, automating model training, augmentation, versioning, comparison, drift detection, accelerating research process and improving model precision by 32\%}
         % \resumeItem{Created data processing pipeline using Python, reducing manual data processing from 10 hours to 1 hour/week}
@@ -218,30 +222,39 @@
 %         \resumeItem{Architected and deployed \textbf{AWS} infrastructure using \textbf{CDK}, \textbf{ECS Fargate}, \textbf{ECR}, and \textbf{Docker} with \textbf{CI/CD} via \textbf{GitHub Actions}, managing \textbf{PostgreSQL} hosting and \textbf{CloudWatch} monitoring for production environment}
 %         \resumeItem{Implemented optimistic UI updates with \textbf{React Query}, reducing perceived latency from \textbf{2 seconds to instant}}
 %           \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{\textbf{NLP Similarity Framework}} $|$ {\underline{\href{https://github.com/josh-segal/NLP-Text-Entailment-Presentation-Similarity-Evaluation}{Github}}} $|$ {\underline{\href{https://docs.google.com/document/d/1OfGY4GHFgta75f1Y15qswR-TceMsYTiG29EC4w4jIV4/edit?usp=sharing}{Report}}}}
+        {}
+        \resumeItemListStart
+          \resumeItem{Developed a framework for evaluating research presentation-paper similarity, achieved 76$\%$ recall on human labels}
+          \resumeItem{Designed and implemented LSTM RNN, distilBERT, Logistic Regression NLP models for text entailment, achieved 62$\%$ validation accuracy across 570k samples, employed Bayesian Optimization for hyperparameter tuning}
+        \resumeItemListEnd
   
-  \resumeProjectHeading
-          {\textbf{\textbf{SMS Assistant for Restaurant}} $|$ {\underline{\href{https://github.com/MiloMargolis/text-me-assistant}{GitHub}}}}{}
-          \resumeItemListStart
-          \resumeItem{Built production {\textbf{RAG}} SMS agent to respond to employee texts, automating {\textbf{75\%}} of responses for {\textbf{50+}} staff}
-          \resumeItem{Implemented self-learning system using Twilio webhooks and {\textbf{Node.js}} to capture manager corrections and continuously expand Supabase knowledge base, improving answer coverage from {\textbf{55\% to 75\%}} in one week}
-          \resumeItem{Deployed serverless architecture on {\textbf{AWS Lambda}}, reducing costs by {\textbf{90\%}} while handling {\textbf{1k+}} queries/mo}
-          \resumeItemListEnd
+  % \resumeProjectHeading
+  %         {\textbf{\textbf{SMS Assistant for Restaurant}} $|$ {\underline{\href{https://github.com/MiloMargolis/text-me-assistant}{GitHub}}}}{}
+  %         \resumeItemListStart
+  %         \resumeItem{Built production {\textbf{RAG}} SMS agent to respond to employee texts, automating {\textbf{75\%}} of responses for {\textbf{50+}} staff}
+  %         \resumeItem{Implemented self-learning system using Twilio webhooks and {\textbf{Node.js}} to capture manager corrections and continuously expand Supabase knowledge base, improving answer coverage from {\textbf{55\% to 75\%}} in one week}
+  %         \resumeItem{Deployed serverless architecture on {\textbf{AWS Lambda}}, reducing costs by {\textbf{90\%}} while handling {\textbf{1k+}} queries/mo}
+  %         \resumeItemListEnd
 
     \resumeProjectHeading
-          {\textbf{\textbf{Calendar Automation System}} $|$ {\underline{\href{https://github.com/josh-segal/assistant}{GitHub}}}}
-          {}
-          \resumeItemListStart
-            \resumeItem{Developed {\textbf{Node.js}} calendar automation system using LLMs and Notion API, saving {\textbf{5+}} hours/week of planning}
-            \resumeItem{Fine-tuned distilBERT classification model for calendar event types, reducing event misclassifications by {\textbf{80\%}} across {\textbf{200+}} events, using LLMs to generate {\textbf{10k+}} labeled training examples to overcome data scarcity}
-          \resumeItemListEnd
+      {\textbf{\textbf{Calendar Automation System}} $|$ {\underline{\href{https://github.com/josh-segal/assistant}{GitHub}}}}
+        {}
+        \resumeItemListStart
+          \resumeItem{Built \textbf{AI} system with locally-deployed fine-tuned \textbf{distilBERT} model for calendar classification, eliminating cloud API costs and reducing latency by \textbf{75\%} across \textbf{200+} events}
+          \resumeItem{Trained \textbf{classification} model using synthetic dataset of \textbf{10k+} examples to overcome data scarcity}
+          \resumeItem{Architected \textbf{Node.js} inference server for local model serving with Notion API integration, saving \textbf{5+} hours/week}
+        \resumeItemListEnd
 
-    \resumeProjectHeading
-          {\textbf{\textbf{Medical Claims Engine}} $|$ {\underline{\href{https://github.com/josh-segal/healthtech-sim}{GitHub}}}}
-          {}
-          \resumeItemListStart
-            \resumeItem{Built parallel claims processing engine using {\textbf{Rust}}, achieving {\textbf{100\%}} reliability across {\textbf{5k+}} claims/second}
-            \resumeItem{Implemented real-time claims aging report with automated bucketing and statistical analysis}
-          \resumeItemListEnd
+    % \resumeProjectHeading
+    %       {\textbf{\textbf{Medical Claims Engine}} $|$ {\underline{\href{https://github.com/josh-segal/healthtech-sim}{GitHub}}}}
+    %       {}
+    %       \resumeItemListStart
+    %         \resumeItem{Built parallel claims processing engine using {\textbf{Rust}}, achieving {\textbf{100\%}} reliability across {\textbf{5k+}} claims/second}
+    %         \resumeItem{Implemented real-time claims aging report with automated bucketing and statistical analysis}
+    %       \resumeItemListEnd
           
       % \resumeProjectHeading
       %     {\textbf{\textbf{Roommate Matching App}} $|$ \emph{300+ Users $|$ \$3600+ Revenue $|$ {\underline{\href{https://www.houseflyai.com/}{Website}}}}}{}
@@ -257,15 +270,6 @@
       %       \resumeItem{Built \textbf{Streamlit} web-app using \textbf{Python}, \textbf{MySQL}, \textbf{Docker}, and integrated ML models for users to track and predict correlation between \textbf{300,000+} stock data points and the progress of \textbf{1,000+} pieces of legislation}
       %       \resumeItem{Designed \textbf{20} RESTful API routes and interfaced containerized ML models for stock price and volume predictions}
       %     \resumeItemListEnd
-
-          
-      \resumeProjectHeading
-          {\textbf{\textbf{NLP Similarity Framework}} $|$ {\underline{\href{https://github.com/josh-segal/NLP-Text-Entailment-Presentation-Similarity-Evaluation}{Github}}} $|$ {\underline{\href{https://docs.google.com/document/d/1OfGY4GHFgta75f1Y15qswR-TceMsYTiG29EC4w4jIV4/edit?usp=sharing}{Report}}}}
-          {}
-          \resumeItemListStart
-            \resumeItem{Developed a framework for evaluating research presentation-paper similarity, achieved 76$\%$ recall on human labels}
-            \resumeItem{Designed and implemented LSTM RNN, distilBERT, Logistic Regression NLP models for text entailment, achieved 62$\%$ validation accuracy across 570k samples, employed Bayesian Optimization for hyperparameter tuning}
-          \resumeItemListEnd
       
       
       % \resumeProjectHeading
